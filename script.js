@@ -12,7 +12,7 @@ let mx = -100, my = -100, rx = -100, ry = -100;
 
 document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
 
-document.querySelectorAll('a, button, .card, .skill-group').forEach(el => {
+document.querySelectorAll('a, button, .card, .skill-group, .art-card').forEach(el => {
   el.addEventListener('mouseenter', () => {
     cursor.style.width = '20px';
     cursor.style.height = '20px';
@@ -70,13 +70,11 @@ class Particle {
   }
   update() {
     this.life++;
-    // fade in/out
     const half = this.maxLife / 2;
     this.alpha = this.life < half
       ? (this.life / half) * this.maxAlpha
       : ((this.maxLife - this.life) / half) * this.maxAlpha;
 
-    // mouse repulsion
     const dx = this.x - mouse.x;
     const dy = this.y - mouse.y;
     const dist = Math.sqrt(dx * dx + dy * dy);
@@ -86,10 +84,8 @@ class Particle {
       this.vy += (dy / dist) * force;
     }
 
-    // dampen
     this.vx *= 0.98;
     this.vy *= 0.98;
-
     this.x += this.vx;
     this.y += this.vy;
 
@@ -103,7 +99,6 @@ class Particle {
   }
 }
 
-// Connection lines between close particles
 function drawConnections() {
   for (let i = 0; i < particles.length; i++) {
     for (let j = i + 1; j < particles.length; j++) {
@@ -141,11 +136,11 @@ const observer = new IntersectionObserver(entries => {
       e.target.style.transform = 'translateY(0)';
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.08 });
 
-document.querySelectorAll('.card, .skill-group, .section-title').forEach(el => {
+document.querySelectorAll('.card, .skill-group, .section-title, .art-card').forEach((el, i) => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  el.style.transition = `opacity 0.6s ease ${i * 0.05}s, transform 0.6s ease ${i * 0.05}s`;
   observer.observe(el);
 });

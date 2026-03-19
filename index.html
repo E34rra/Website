@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leo — Developer</title>
+    <title>Leo — Developer & 3D Artist</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
@@ -14,7 +14,8 @@
         <span class="logo">LEO</span>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Dev</a></li>
+            <li><a href="#art">3D Art</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -24,14 +25,17 @@
         <div class="hero-inner">
             <p class="eyebrow">Hello, I'm</p>
             <h1>Leo<span class="dot">.</span></h1>
-            <p class="tagline">I build clean, fast, and thoughtful software for the web.</p>
-            <a href="#projects" class="btn">View my work</a>
+            <p class="tagline">I build clean web software and craft detailed 3D art in Blender.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">View my work</a>
+                <a href="#art" class="btn btn-ghost">3D Art ↓</a>
+            </div>
         </div>
         <div class="scroll-hint">scroll ↓</div>
     </section>
 
     <section class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Web Dev</h2>
         <div class="grid">
             <div class="card">
                 <span class="card-tag">Web App</span>
@@ -60,6 +64,72 @@
         </div>
     </section>
 
+    <section class="section" id="art">
+        <h2 class="section-title">3D Art</h2>
+        <p class="section-sub">Models and animations made in Blender.</p>
+        <div class="art-grid">
+
+            <div class="art-card">
+                <div class="art-media">
+                    <img src="assets/titan.png" alt="Titan character model" loading="lazy" />
+                </div>
+                <div class="art-info">
+                    <h3>Titan Character</h3>
+                    <p>Full character model with detailed muscular anatomy, custom hair and front/back views.</p>
+                    <div class="card-footer">
+                        <span class="tech">Blender</span><span class="tech">Character</span><span class="tech">Sculpt</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="art-media">
+                    <img src="assets/sword.png" alt="Fantasy sword model" loading="lazy" />
+                </div>
+                <div class="art-info">
+                    <h3>Fantasy Sword</h3>
+                    <p>High-detail weapon with ornate guard and curved blade, shown from multiple angles.</p>
+                    <div class="card-footer">
+                        <span class="tech">Blender</span><span class="tech">Hard Surface</span><span class="tech">Weapon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card art-card--wide">
+                <div class="art-media art-media--video">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/horse.mov" type="video/mp4" />
+                        <source src="assets/horse.mov" type="video/quicktime" />
+                    </video>
+                </div>
+                <div class="art-info">
+                    <h3>Horse Animation</h3>
+                    <p>Fully rigged and animated horse with smooth locomotion cycles.</p>
+                    <div class="card-footer">
+                        <span class="tech">Blender</span><span class="tech">Rigging</span><span class="tech">Animation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card art-card--wide">
+                <div class="art-media art-media--video">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/anim.mov" type="video/mp4" />
+                        <source src="assets/anim.mov" type="video/quicktime" />
+                    </video>
+                </div>
+                <div class="art-info">
+                    <h3>Animation Reel</h3>
+                    <p>Motion study showcasing timing, weight and fluid movement.</p>
+                    <div class="card-footer">
+                        <span class="tech">Blender</span><span class="tech">Animation</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section class="section" id="skills">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
@@ -76,8 +146,8 @@
                 <p>Git, GitHub, VS Code, Figma, Linux</p>
             </div>
             <div class="skill-group">
-                <h4>Concepts</h4>
-                <p>REST APIs, Databases, CI/CD, Responsive Design</p>
+                <h4>3D & Art</h4>
+                <p>Blender, Sculpting, Rigging, Animation, Hard Surface Modelling</p>
             </div>
         </div>
     </section>
@@ -87,7 +157,7 @@
         <p class="contact-sub">Have a project in mind or just want to say hi? My inbox is open.</p>
         <a href="mailto:leo@example.com" class="btn">Say hello →</a>
         <div class="socials">
-            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://github.com/E34rra" target="_blank">GitHub</a>
             <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
         </div>
     </section>
