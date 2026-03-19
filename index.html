@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leo — Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <canvas id="bg"></canvas>
+
+    <nav>
+        <span class="logo">LEO</span>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="about">
+        <div class="hero-inner">
+            <p class="eyebrow">Hello, I'm</p>
+            <h1>Leo<span class="dot">.</span></h1>
+            <p class="tagline">I build clean, fast, and thoughtful software for the web.</p>
+            <a href="#projects" class="btn">View my work</a>
+        </div>
+        <div class="scroll-hint">scroll ↓</div>
+    </section>
+
+    <section class="section" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="card-tag">Web App</span>
+                <h3>Project Alpha</h3>
+                <p>A full-stack web application with real-time data sync and a clean dashboard interface.</p>
+                <div class="card-footer">
+                    <span class="tech">React</span><span class="tech">Node.js</span><span class="tech">MongoDB</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-tag">Tool</span>
+                <h3>DevUtils CLI</h3>
+                <p>A command-line toolkit that automates repetitive dev tasks and speeds up local workflows.</p>
+                <div class="card-footer">
+                    <span class="tech">Python</span><span class="tech">Bash</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-tag">Website</span>
+                <h3>Portfolio v1</h3>
+                <p>This site — built from scratch with vanilla HTML, CSS, and JS. No frameworks, just craft.</p>
+                <div class="card-footer">
+                    <span class="tech">HTML</span><span class="tech">CSS</span><span class="tech">JS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <h4>Languages</h4>
+                <p>JavaScript, Python, HTML, CSS, SQL</p>
+            </div>
+            <div class="skill-group">
+                <h4>Frameworks</h4>
+                <p>React, Node.js, Express, Flask</p>
+            </div>
+            <div class="skill-group">
+                <h4>Tools</h4>
+                <p>Git, GitHub, VS Code, Figma, Linux</p>
+            </div>
+            <div class="skill-group">
+                <h4>Concepts</h4>
+                <p>REST APIs, Databases, CI/CD, Responsive Design</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2 class="section-title">Get in touch</h2>
+        <p class="contact-sub">Have a project in mind or just want to say hi? My inbox is open.</p>
+        <a href="mailto:leo@example.com" class="btn">Say hello →</a>
+        <div class="socials">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <span>Built by Leo &mdash; <span id="year"></span></span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
